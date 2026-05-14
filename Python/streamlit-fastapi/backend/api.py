@@ -10,3 +10,9 @@ class RocketObject(BaseModel):
     id : int
     name : str
     score : float
+
+@app.get("/")
+def root():
+    return {
+        "Data" : "Test Data"
+    }
